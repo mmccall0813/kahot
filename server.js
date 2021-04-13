@@ -17,6 +17,6 @@ io.on("connection", (socket) => {
   var pin = "";
   var name = ""
   socket.on("pin", (number) => {
-    pin = number; //
+    pin = number; // set the pin number for the socket so we can remember it later when we 
   })
 })
