@@ -15,14 +15,22 @@ just communicates with the node.js server.
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Kahot - An alternative Kahoot client</title>
+    <script>
+    $(function() {
+      $("#pinForm").submit(function () {
+      return false; 
+      });
+    })
+    </script>
   </head>
   <body>
+    <div id="startScreen">
     <div id="gamecode">
-      <form action="#">
+      <form id="pinForm">
       <input placeholder="Game PIN" type="number">
-      <input type="submit">
+      <input type="submit" value="Enter">
       </form>
     </div>
+    </div>
   </body>
-  
 </html>
