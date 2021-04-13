@@ -13,7 +13,9 @@ socket.on("stateChange", (which) => {
 })
 
 // Define display elements
-var startScreen = $("startScreen");
+var startScreen = $("#startScreen");
+var pinForm = $("#gamecode");
+var nickForm = $("#nickname");
 
 function gamePin(){
   var value = document.getElementById("pin").value;
