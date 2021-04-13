@@ -7,6 +7,11 @@ with socket.io and things like it.
 var socket = io();
 // If your IDE says that io is not defined, dont worry about it, we import socket.io in the index.html
 
+// Define display elements
+
+
+
+
 class Game {
   constructor(){
     this.socket = socket;
@@ -25,6 +30,7 @@ class Game {
     */
   }
   setState(which){
+    this.state = parseInt(which);
     
   }
 }

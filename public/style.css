@@ -1,4 +1,7 @@
-/* this file is loaded by index.html and styles the page */
+/*
+this is the default css for glitch. 
+i think it looks pretty nice so i kept it
+*/
 
 * {
   box-sizing: border-box;
@@ -53,4 +56,8 @@ footer {
   margin-top: 3em;
   padding-top: 1.5em;
   border-top: 1px solid lightgrey;
+}
+
+#gamecode {
+  
 }
