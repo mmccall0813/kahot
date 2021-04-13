@@ -30,11 +30,19 @@ You can find me on Github, Glitch, and probably a few social media websites
   <body>
     <div id="startScreen">
     <div id="gamecode">
-      <form id="pinForm">
-      <input placeholder="Game PIN" type="number" id="pin">
+      <!-- Game Pin Form -->
+      <form id="pinForm" onsubmit="socket.emit('pin', document.getElementById('pin').value)">
+      <input placeholder="Game PIN" type="number" id="pin"><br>
       <span class="error" id="pinError"></span>
       <input type="submit" value="Enter" id="submit">
       </form>
+      <!-- Nickname Form -->
+      <form id="nickForm" hidden="true">
+      <input placeholder="Game PIN" type="number" id="nicknmae">
+      <span class="error" id="nickError"></span>
+      <input type="submit" value="Enter" id="nickSubmit">
+      </form>
+      
     </div>
     </div>
   </body>
