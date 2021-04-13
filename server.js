@@ -18,6 +18,6 @@ io.on("connection", (socket) => {
   var name = ""
   socket.on("pin", (number) => {
     console.log(number)
-    pin = number
+    pin = number;
   })
 })

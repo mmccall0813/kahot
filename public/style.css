@@ -38,14 +38,12 @@ input {
 }
 
 form button {
-  background-color: #bbbbf2;
-  border: 2px solid currentColor;
-  border-radius: .25em;
-  cursor: pointer;
-  font-size: inherit;
-  line-height: 1.4em;
-  padding: 0.25em 1em;
-  max-width: 20ch;
+  border: 1px solid silver;
+  display: inline;
+  font-size: 16px;
+  /*margin-bottom: 10px;*/
+  padding: 5px;
+  width: 100%;
 }
 
 form button:hover {

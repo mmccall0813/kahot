@@ -14,11 +14,11 @@ You can find me on Github, Glitch, and probably a few social media websites
   <head>
     <script src="socket.io/socket.io.js"></script> <!-- Socket.io -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- JQuery -->
-    <script src="script.js"></script> <!-- Main code -->
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:800&display=swap" rel="stylesheet">
     <title>Kahot - An alternative Kahoot client</title>
+    <script src="script.js"></script> <!-- Main code -->
     <script>
     $(function() {
       $("#pinForm").submit(function () {
@@ -31,10 +31,10 @@ You can find me on Github, Glitch, and probably a few social media websites
     <div id="startScreen">
     <div id="gamecode">
       <!-- Game Pin Form -->
-      <form id="pinForm" onsubmit="socket.emit('pin', document.getElementById('pin').value)">
+      <form id="pinForm">
       <input placeholder="Game PIN" type="number" id="pin"><br>
       <span class="error" id="pinError"></span>
-      <input type="submit" value="Enter" id="submit">
+        <button type="submit" id="submit" onclick="pin()">Enter</button>
       </form>
       <!-- Nickname Form -->
       <form id="nickForm" hidden="true">

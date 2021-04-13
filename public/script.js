@@ -10,7 +10,10 @@ var socket = io();
 // Define display elements
 var startScreen = $("startScreen");
 
-
+function pin(){
+  var value = document.getElementById("pin").value;
+  alert(value)
+}
 
 class Game {
   constructor(){
