@@ -8,7 +8,7 @@ i think it looks pretty nice so i kept it
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 2em 1em;
   line-height: 1.5em;
 }
@@ -58,6 +58,9 @@ footer {
   border-top: 1px solid lightgrey;
 }
 
+
+@keyframes Kahot{25%{background:#41c4de;}50%{background:#8cc73f;}75%{background:#f3d333;}100%{background:#f78e56;}}
+
 #gamecode {
   display:block;
   position:absolute;
@@ -65,4 +68,14 @@ footer {
   top: 40%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+#startScreen {
+  position:absolute;
+  left:0%;
+  top:0%;
+  width:100%;
+  height:100%;
+  background:#42c4de;
+animation:kahoot 14s infinite;
+animation-direction:alternate;
 }
