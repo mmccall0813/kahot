@@ -7,6 +7,11 @@ with socket.io and things like it.
 var socket = io();
 // If your IDE says that io is not defined, dont worry about it, we import socket.io in the index.html
 
+// Define socket stuff
+socket.on("stateChange", (which) => {
+  
+})
+
 // Define display elements
 var startScreen = $("startScreen");
 
