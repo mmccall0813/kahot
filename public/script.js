@@ -14,6 +14,8 @@ function gamePin(){
   var value = document.getElementById("pin").value;
   if(!isNaN(value)){
   socket.emit("pin", value)
+  }else{
+    
   }
 }
 
@@ -32,6 +34,8 @@ class Game {
     4: waiting for question
     5: waiting for player to answer question
     6: player answered question, waiting for results to be shown and next one to start
+    7: Loading screen
+    
     */
   }
   setState(which){
