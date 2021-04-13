@@ -2,11 +2,10 @@
 /*
 This code will probably be very messy, as i'm not too familiar 
 with socket.io and things like it.
-
 */
 
 var socket = io();
-// If your IDE says that io is not defined, dont worry about it, we import it in the html.
+// If your IDE says that io is not defined, dont worry about it, we import socket.io in the index.html
 
 class Game {
   constructor(){
@@ -24,5 +23,8 @@ class Game {
     5: waiting for player to answer question
     6: player answered question, waiting for results to be shown and next one to start
     */
+  }
+  setState(which){
+    
   }
 }
