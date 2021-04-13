@@ -4,4 +4,4 @@
 
 - Basic game states
 - 2FA
-- Css
+- CSS styling
