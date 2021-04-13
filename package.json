@@ -11,8 +11,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "kahoot-spam": "^1.1.8",
-    "kahoot.js-updated": "^3.404.1",
+    "kahoot.js-updated": "^2.4.0",
     "socket.io": "^4.0.1"
   },
   "engines": {
