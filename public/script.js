@@ -10,9 +10,11 @@ var socket = io();
 // Define display elements
 var startScreen = $("startScreen");
 
-function pin(){
+function gamePin(){
   var value = document.getElementById("pin").value;
-  alert(value)
+  if(!isNaN(value)){
+  socket.emit("pin", value)
+  }
 }
 
 class Game {
