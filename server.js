@@ -5,9 +5,14 @@
 
 const express = require("express");
 const config = require("./config.json");
-const socket = require("socket.io")
 const app = express();
 app.use(express.static("public"));
 const listener = app.listen(process.env.PORT, () => {
-  console.log("Your app is listening on port " + listener.address().port);
+  console.log("Kahot listening on port " + listener.address().port);
 });
+const io = require("socket.io")(listener);
+io.on("connection", (socket) => {
+  //
+  
+  
+})

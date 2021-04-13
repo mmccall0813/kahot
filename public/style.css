@@ -59,5 +59,6 @@ footer {
 }
 
 #gamecode {
-  
+  position:absolute;
+  margin: auto;
 }
