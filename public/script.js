@@ -9,7 +9,7 @@ var socket = io();
 
 // Define socket stuff
 socket.on("stateChange", (which) => {
-  
+  Kahot.setState(2)
 })
 
 // Define display elements
@@ -48,3 +48,5 @@ class Game {
     
   }
 }
+
+var Kahot = new Game();

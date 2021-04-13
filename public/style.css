@@ -67,6 +67,14 @@ footer {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+#nickname {
+  display:block;
+  position:absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 #startScreen {
   position:absolute;
   left:0%;
