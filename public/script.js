@@ -15,7 +15,7 @@ function gamePin(){
   if(!isNaN(value)){
   socket.emit("pin", value)
   }else{
-    
+    $("#pinError")[0].innerHTML = "Please enter a valid PIN number.";
   }
 }
 
