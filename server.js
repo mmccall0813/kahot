@@ -30,12 +30,12 @@ io.on("connection", (socket) => {
   })
   
   socket.on("disconnect", ()=>{
-   // client.leave()
+    client.leave()
   })
   client.on("joined", ()=>{
     socket.emit("stateChange", 3)
   })
-  /*client.on("disconnect", (string)=>{
+  client.on("disconnect", (string)=>{
   socket.emit("stateChange", 1)
-  })*/
+  })
 })
