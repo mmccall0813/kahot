@@ -26,6 +26,15 @@ function gamePin(){
   }
 }
 
+function gameNick(){
+  var value = document.getElementById("nickInput").value
+  if(value !== "" ){
+    socket.emit("nick", value)
+  }else{
+    $("#nickError")[0].innerHTML = "Nickname cannot be empty";
+  }
+}
+
 class Game {
   constructor(){
     this.socket = socket;
@@ -52,10 +61,12 @@ class Game {
     switch(this.state){
       case 1: $("#gamecode").show();
       case 2: $("#nickname").show();
-      case 3: $("#loading").show(); $("#loadingMessage")[0].innerHTML = "Waiting for host to start game...";
-      case 4: $("#loading").show(); $("#loadingMessage")[0].innerHTML = "Waiting for question";
+      case 3: $("#loading").show(); $("#loadingMessage")[0].innerHTML = "You're In! Waiting for the quiz to start...";
+      case 4: $("#loading").show(); $("#loadingMessage")[0].innerHTML = "Waiting for question...";
       case 5: $("#question").show();
       case 6: $("#loading").show(); $("#loadingMessage")[0].innerHTML = answertext[Math.floor(Math.random()*3)-1]
+      
+      case 8: $("#loading").show(); $("#loadingMessage")[0].innerHTML = "Joining game...";
     }
   }
 }

@@ -21,4 +21,10 @@ io.on("connection", (socket) => {
     socket.emit("stateChange", 2)
     console.log("pin " + number)
   })
+  var client = new kahoot();
+  
+  socket.on("nick", (name) => {
+    client.join(pin, name);
+    socket.emit("stateChange", )
+  })
 })
