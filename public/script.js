@@ -62,6 +62,7 @@ class Game {
       case 5: $("#question").show(); break;
       case 6: $("#loading").show(); $("#loadingMessage")[0].innerHTML = answertext[Math.floor(Math.random()*3)-1]; break;
       case 8: $("#loading").show(); $("#loadingMessage")[0].innerHTML = "Joining game..."; break;
+      case 9: $("#loading").show(); $("#loadingMessage")[0].innerHTML = "Quiz started!"; break;
     }
   }
 }

@@ -32,7 +32,7 @@ io.on("connection", (socket) => {
     socket.emit("stateChange", 3)
   })
   client.on("QuizStart", ()=>{
-    socke
+    socket.emit("stateChange", 9)
   })
   client.on("Disconnect", (string)=>{
   socket.emit("stateChange", 1)

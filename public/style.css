@@ -39,6 +39,7 @@ input {
   /*margin-bottom: 10px;*/
   padding: 5px;
   width: 100%;
+  text-align:center;
 }
 
 form button {
@@ -118,8 +119,7 @@ footer {
   transform: translate(-50%, -50%);
 }
 #loadingMessage{
-  width:250px;
-  
+  display:inline;
   color:black;
   font-weight: bold;
 }
