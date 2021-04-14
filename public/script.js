@@ -41,7 +41,7 @@ class Game {
     4: waiting for question
     5: waiting for player to answer question
     6: player answered question, waiting for results to be shown and next one to start
-    7: Loading screen
+    7: question results
     
     */
   }
@@ -55,7 +55,7 @@ class Game {
       case 3: $("#loading").show(); $("#loadingMessage")[0].innerHTML = "Waiting for host to start game...";
       case 4: $("#loading").show(); $("#loadingMessage")[0].innerHTML = "Waiting for question";
       case 5: $("#question").show();
-      case 6: $("#loading").show(); $("#loadingMessage")[0].innerHTML = Math.floor(Math.random()*3)-1
+      case 6: $("#loading").show(); $("#loadingMessage")[0].innerHTML = answertext[Math.floor(Math.random()*3)-1]
     }
   }
 }
