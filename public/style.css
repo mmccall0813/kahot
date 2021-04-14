@@ -62,6 +62,8 @@ footer {
 
 
 @keyframes Kahot{25%{background:#41c4de;}50%{background:#8cc73f;}75%{background:#f3d333;}100%{background:#f78e56;}}
+@keyframes KahotText{25%{color:#41c4de;}50%{color:#8cc73f;}75%{color:#f3d333;}100%{color:#f78e56;}}
+
 
 #gamecode {
   display:block;
@@ -114,5 +116,6 @@ footer {
   width:200px;
   text-align:center;
   vertical-align:bottom;
-  color:blue;
+   color:#42c4de;
+
 }
