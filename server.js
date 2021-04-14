@@ -19,7 +19,6 @@ io.on("connection", (socket) => {
   socket.on("pin", (number) => {
     pin = number; // set the pin number for the socket so we can remember it later when we get the game pin
     socket.emit("stateChange", 2)
-    console.log("pin " + number)
   })
   var client = new kahoot();
   function init(Client){
@@ -40,7 +39,6 @@ io.on("connection", (socket) => {
   })
   Client.on("QuestionStart", (data) => {
     console.log(JSON.stringify(data))
-    socket.emit("stateChange", 5)
   })
   Client.on("QuestionEnd", (data)=> {
     socket.emit("QuestionStats", JSON.stringify(data))
