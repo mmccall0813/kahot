@@ -42,7 +42,10 @@ io.on("connection", (socket) => {
     console.log(JSON.stringify(data))
     socket.emit("stateChange", 5)
   })
-  
+  Client.on("QuestionEnd", (data)=> {
+    socket.emit("QuestionStats", JSON.stringify(data))
+    socket.emit("stateChange", 7);
+  })
   }
   socket.on("nick", (name) => {
     name=name.split("").join("​");
@@ -52,6 +55,10 @@ io.on("connection", (socket) => {
   })
   socket.on("disconnect", ()=>{
     client.leave()
+  })
+  socket.on("answer", (answer) => {
+    client.answer(answer);
+    socket.emit("stateChange", 6)
   })
   
 })

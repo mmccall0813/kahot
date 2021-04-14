@@ -21,6 +21,10 @@ socket.on("connect", ()=> {
     $("#nickError")[0].innerHTML = "";
 })
 
+function answer(num){
+  socket.emit("answer", num)
+}
+
 function gamePin(){
   var value = document.getElementById("pin").value;
   if(!isNaN(value)){
