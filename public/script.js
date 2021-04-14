@@ -47,14 +47,14 @@ class Game {
   }
   setState(which){
     this.state = parseInt(which);
-    for(var i in $(".KahotGameItem")){
-    if(parseInt($(".KahotGameItem")[i].dataset.state) == parseInt(which)){
-       $(".KahotGameItem")[i].show()
-       } else{
-      $(".KahotGameItem")[i].hide()
-       }
-  }
-    alert(which)
+    $(".KahotGameItem").hide();
+    switch(this.state){
+      case 1: $("#gamecode").show();
+      case 2: $("#nickname").show();
+      case 3: $("#loading").show(); $("#loadingMessage")[0].innerHTML = "Waiting for host to start game...";
+      case 4: $("#loading").show(); $("#loadingMessage")[0].innerHTML = "Waiting for question";
+      case 5: $("#question").show();
+    }
   }
 }
 
