@@ -142,6 +142,7 @@ footer {
 #answer1 {
   display: block;
   position:absolute;
+  background:#e21b3c;
   top:0px;
   left:0px;
   height:250px;
@@ -150,6 +151,7 @@ footer {
 #answer2 {
   display: block;
   position:absolute;
+  background:#1368ce;
   top:0px;
   right:0px;
   height:250px;
@@ -157,6 +159,7 @@ footer {
 }
 #answer3 {
   display: block;
+  background:#1368ce;
   position:absolute;
   bottom:0px;
   left:0px;
@@ -166,6 +169,7 @@ footer {
 #answer4 {
   display: block;
   position:absolute;
+  background:#26890c;
   bottom:0px;
   right:0px;
   height:250px;
