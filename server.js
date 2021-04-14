@@ -22,28 +22,32 @@ io.on("connection", (socket) => {
     console.log("pin " + number)
   })
   var client = new kahoot();
-  
-  socket.on("nick", (name) => {
-    name=name.split("").join("​");
-    client.join(pin, name);
-    socket.emit("stateChange", 8)
-  })
-  client.on("Joined", ()=>{
+  function init(Client){
+    Client.on("Joined", ()=>{
     socket.emit("stateChange", 3)
   })
-  client.on("QuizStart", ()=>{
+  Client.on("QuizStart", ()=>{
     socket.emit("stateChange", 9)
   })
-  client.on("Disconnect", (string)=>{
+  Client.on("Disconnect", (string)=>{
     client=new kahoot();
+    init(client);
   socket.emit("stateChange", 1)
   })
-  client.on("QuestionReady", (data) => {
+  Client.on("QuestionReady", (data) => {
     console.log(JSON.stringify(data))
     socket.emit("stateChange", 4)
   })
-  client.on("QuestionStart", (data) => {
+  Client.on("QuestionStart", (data) => {
     console.log(JSON.stringify(data))
+  })
+  
+  }
+  socket.on("nick", (name) => {
+    name=name.split("").join("​");
+    client.join(pin, name);
+    init(client)
+    socket.emit("stateChange", 8)
   })
   socket.on("disconnect", ()=>{
     client.leave()
