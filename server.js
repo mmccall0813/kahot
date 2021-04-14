@@ -37,6 +37,10 @@ io.on("connection", (socket) => {
   client.on("Disconnect", (string)=>{
   socket.emit("stateChange", 1)
   })
+  client.on("QuestionReady", (data) => {
+    console.log(JSON.stringify(data))
+    socket.emit("stateChange", 4)
+  })
   socket.on("disconnect", ()=>{
     client.leave()
   })
