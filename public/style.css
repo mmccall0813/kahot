@@ -132,5 +132,42 @@ footer {
   transform: translate(-50%, -50%);
   width:500px;
   height:500px;
+  background-color: #eee;
   padding: 0.5em;
+}
+.answer {
+  border:none;
+  
+}
+#answer1 {
+  display: block;
+  position:absolute;
+  top:0px;
+  left:0px;
+  height:250px;
+  width:250px;
+}
+#answer2 {
+  display: block;
+  position:absolute;
+  top:0px;
+  right:0px;
+  height:250px;
+  width:250px;
+}
+#answer3 {
+  display: block;
+  position:absolute;
+  bottom:0px;
+  left:0px;
+  height:250px;
+  width:250px;
+}
+#answer4 {
+  display: block;
+  position:absolute;
+  bottom:0px;
+  right:0px;
+  height:250px;
+  width:250px;
 }

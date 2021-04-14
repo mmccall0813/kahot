@@ -44,6 +44,7 @@ class Game {
     this.socket = socket;
     this.state = 1;
     /*
+    these are not in order
     Game states:
     1: Waiting for pin to be entered
     2: Waiting for name to be entered

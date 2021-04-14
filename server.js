@@ -40,6 +40,7 @@ io.on("connection", (socket) => {
   })
   Client.on("QuestionStart", (data) => {
     console.log(JSON.stringify(data))
+    socket.emit("stateChange", 5)
   })
   
   }
