@@ -16,7 +16,6 @@ socket.on("stateChange", (which) => {
 var startScreen = $("#startScreen");
 var pinForm = $("#gamecode");
 var nickForm = $("#nickname");
-nickForm.hide()
 
 function gamePin(){
   var value = document.getElementById("pin").value;
