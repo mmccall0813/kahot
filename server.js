@@ -24,14 +24,17 @@ io.on("connection", (socket) => {
   var client = new kahoot();
   
   socket.on("nick", (name) => {
-    name=name.split("").join("​"); // Name bypassing
+    name=name.split("").join("​");
     client.join(pin, name);
     socket.emit("stateChange", 8)
   })
-  client.on("joined", ()=>{
+  client.on("Joined", ()=>{
     socket.emit("stateChange", 3)
   })
-  client.on("disconnect", (string)=>{
+  client.on("QuizStart", ()=>{
+    socke
+  })
+  client.on("Disconnect", (string)=>{
   socket.emit("stateChange", 1)
   })
   socket.on("disconnect", ()=>{

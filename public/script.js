@@ -46,6 +46,7 @@ class Game {
     5: waiting for player to answer question
     6: player answered question, waiting for results to be shown and next one to start
     7: question results
+    8: joining game
     
     */
   }
@@ -56,7 +57,7 @@ class Game {
     switch(this.state){
       case 1: $("#gamecode").show(); break;
       case 2: $("#nickname").show(); break;
-      case 3: $("#loading").show(); $("#loadingMessage")[0].innerHTML = "You're In! Waiting for the quiz to start..."; break;
+      case 3: $("#loading").show(); $("#loadingMessage")[0].innerHTML = "You're In!"; break;
       case 4: $("#loading").show(); $("#loadingMessage")[0].innerHTML = "Waiting for question..."; break;
       case 5: $("#question").show(); break;
       case 6: $("#loading").show(); $("#loadingMessage")[0].innerHTML = answertext[Math.floor(Math.random()*3)-1]; break;
