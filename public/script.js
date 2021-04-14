@@ -47,31 +47,14 @@ class Game {
   }
   setState(which){
     this.state = parseInt(which);
-    switch(which){
-      case 1:
-      hideExcept(1)
-      case 2:
-      hideExcept(2)
-      case 3:
-      
-      case 4:
-        
-      case 5:
-        
-      case 6:
-        
-      case 7:
-    }
-  }
-}
-
-function hideExcept(x){
-  for(var i in $(".KahotGameItem")){
-    if(parseInt($(".KahotGameItem")[i].dataset.state) == x){
+    for(var i in $(".KahotGameItem")){
+    if(parseInt($(".KahotGameItem")[i].dataset.state) == parseInt(which)){
        $(".KahotGameItem")[i].show()
        } else{
       $(".KahotGameItem")[i].hide()
        }
+  }
+    alert(which)
   }
 }
 
