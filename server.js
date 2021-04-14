@@ -25,6 +25,6 @@ io.on("connection", (socket) => {
   
   socket.on("nick", (name) => {
     client.join(pin, name);
-    socket.emit("stateChange", )
+    socket.emit("stateChange", 8)
   })
 })

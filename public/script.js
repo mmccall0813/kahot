@@ -59,14 +59,13 @@ class Game {
     $(".KahotGameItem").hide();
     var answertext = ["Genius machine?", "Lightning smart?", "Classroom perfection?"]
     switch(this.state){
-      case 1: $("#gamecode").show();
-      case 2: $("#nickname").show();
-      case 3: $("#loading").show(); $("#loadingMessage")[0].innerHTML = "You're In! Waiting for the quiz to start...";
-      case 4: $("#loading").show(); $("#loadingMessage")[0].innerHTML = "Waiting for question...";
-      case 5: $("#question").show();
-      case 6: $("#loading").show(); $("#loadingMessage")[0].innerHTML = answertext[Math.floor(Math.random()*3)-1]
-      
-      case 8: $("#loading").show(); $("#loadingMessage")[0].innerHTML = "Joining game...";
+      case 1: $("#gamecode").show(); break;
+      case 2: $("#nickname").show(); break;
+      case 3: $("#loading").show(); $("#loadingMessage")[0].innerHTML = "You're In! Waiting for the quiz to start..."; break;
+      case 4: $("#loading").show(); $("#loadingMessage")[0].innerHTML = "Waiting for question..."; break;
+      case 5: $("#question").show(); break;
+      case 6: $("#loading").show(); $("#loadingMessage")[0].innerHTML = answertext[Math.floor(Math.random()*3)-1]; break;
+      case 8: $("#loading").show(); $("#loadingMessage")[0].innerHTML = "Joining game..."; break;
     }
   }
 }
