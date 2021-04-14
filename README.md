@@ -6,6 +6,7 @@ An alternative kahoot client using socket.io and kahoot.js-updated
 
 - Random nickname bypass
 - Automatic curse bypassing
+- You dont need to refresh if your kicked
 
 ## Notes
 

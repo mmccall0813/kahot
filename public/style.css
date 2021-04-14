@@ -123,3 +123,14 @@ footer {
   color:black;
   font-weight: bold;
 }
+#question {
+  display:block;
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width:500px;
+  height:500px;
+  padding: 0.5em;
+}
