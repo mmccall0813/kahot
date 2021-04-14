@@ -35,11 +35,15 @@ io.on("connection", (socket) => {
     socket.emit("stateChange", 9)
   })
   client.on("Disconnect", (string)=>{
+    client=new kahoot();
   socket.emit("stateChange", 1)
   })
   client.on("QuestionReady", (data) => {
     console.log(JSON.stringify(data))
     socket.emit("stateChange", 4)
+  })
+  client.on("QuestionStart", (data) => {
+    console.log(JSON.stringify(data))
   })
   socket.on("disconnect", ()=>{
     client.leave()

@@ -12,6 +12,15 @@ socket.on("stateChange", (which) => {
   Kahot.setState(which)
 })
 
+socket.on("disconnect", () => {
+  Kahot.setState(1);
+  $("#nickError")[0].innerHTML = "Disconnected from server";
+})
+
+socket.on("connect", ()=> {
+    $("#nickError")[0].innerHTML = "";
+})
+
 function gamePin(){
   var value = document.getElementById("pin").value;
   if(!isNaN(value)){
