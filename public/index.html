@@ -27,7 +27,8 @@ You can find me on Github, Glitch, and probably a few social media websites
       $("#nickForm").submit(function () {
       return false; 
       });
-      $("#nickname").hide()
+      $(".KahotGameItem").hide()
+      $("#gamecode").show()
     })
     </script>
   </head>
@@ -48,10 +49,10 @@ You can find me on Github, Glitch, and probably a few social media websites
       <span class="error" id="nickError"></span>
         <button type="submit" id="nickSubmit" onclick="gameNick()">Enter</button>
       </form>
-      <!-- Loading screen -->
-      <div>
-        
-      </div>
     </div>
+      <!-- Loading screen -->
+      <div id="loading" class="KahotGameItem">
+        <img src="loading.gif" width="75px" height="75px" id="loadingImg"/>
+      </div>
   </body>
 </html>
