@@ -27,4 +27,11 @@ io.on("connection", (socket) => {
     client.join(pin, name);
     socket.emit("stateChange", 8)
   })
+  
+  socket.on("disconnect", ()=>{
+    client.leave()
+  })
+  client.on("joined", ()=>{
+    socket.emit("stateChange", 3)
+  })
 })

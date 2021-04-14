@@ -12,11 +12,6 @@ socket.on("stateChange", (which) => {
   Kahot.setState(which)
 })
 
-// Define display elements
-var startScreen = $("#startScreen");
-var pinForm = $("#gamecode");
-var nickForm = $("#nickname");
-
 function gamePin(){
   var value = document.getElementById("pin").value;
   if(!isNaN(value)){
