@@ -24,22 +24,18 @@ io.on("connection", (socket) => {
   var client = new kahoot();
   
   socket.on("nick", (name) => {
-    name=name.split("").join("​") // Name bypassing
-    /*
-    Explaination of name bypassing for anyone curious:
-    The game censors names using a list of curse words. To bypass that list,
-    we put a zero width space in between each character so instead of
-    the filter reading "curse word", it instead reads "c•u•r•s•e• •w•o•r•d"
-    (pretend those dots are zero width spaces), and it
-    */
+    name=name.split("").join("​"); // Name bypassing
     client.join(pin, name);
     socket.emit("stateChange", 8)
   })
   
   socket.on("disconnect", ()=>{
-    client.leave()
+   // client.leave()
   })
   client.on("joined", ()=>{
     socket.emit("stateChange", 3)
   })
+  /*client.on("disconnect", (string)=>{
+  socket.emit("stateChange", 1)
+  })*/
 })
