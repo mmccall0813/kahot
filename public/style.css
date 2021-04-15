@@ -175,3 +175,33 @@ footer {
   height:250px;
   width:250px;
 }
+#true {
+    display: block;
+  position:absolute;
+  background:#1368ce;
+  top:0px;
+  left:0px;
+  height:250px;
+  width:250px;
+}
+#false {
+  display: block;
+  position:absolute;
+  background:#e21b3c;
+  top:0px;
+  right:0px;
+  height:250px;
+  width:250px;
+}
+#truefalse {
+  display:block;
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width:500px;
+  height:250px;
+  background-color: #eee;
+  padding: 0.5em;
+}

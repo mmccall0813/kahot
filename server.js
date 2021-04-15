@@ -39,7 +39,11 @@ io.on("connection", (socket) => {
   })
   Client.on("QuestionStart", (data) => {
     console.log(JSON.stringify(data));
+    if(data.layout == "TRUE_FALSE"){
+      socket.emit("stateChange", 10)
+    }else{
     socket.emit("stateChange", 5)
+    }
   })
   Client.on("QuestionEnd", (data)=> {
     socket.emit("QuestionStats", JSON.stringify(data))
