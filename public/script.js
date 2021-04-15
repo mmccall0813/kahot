@@ -28,6 +28,7 @@ function answer(num){
 var multipleChoice = [false, false, false, false];
 
 function multiChoice(num, DOM){
+  alert(JSON.stringify(DOM))
   switch(DOM.background){
     case "#d89e00": DOM.background = "#ac7e00"; multipleChoice[0] = true; break;
     case "#ac7e00": DOM.background = "#d89e00"; multipleChoice[0] = false; break;
@@ -91,7 +92,7 @@ class Game {
       case 8: $("#loading").show(); $("#loadingMessage")[0].innerHTML = "Joining game..."; break;
       case 9: $("#loading").show(); $("#loadingMessage")[0].innerHTML = "Quiz started!"; break;
       case 10: $("#truefalse").show(); break;
-      case 11: $("#multichoice").show(); break;
+      case 11: $("#multiChoice").show(); break;
     }
   }
 }
