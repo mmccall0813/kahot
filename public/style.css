@@ -137,7 +137,7 @@ footer {
 }
 .answer {
   border:none;
-  
+  outline: none;
 }
 #answer1 {
   display: block;
