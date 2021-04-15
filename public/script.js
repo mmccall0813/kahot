@@ -62,6 +62,9 @@ class Game {
     7: question results
     8: joining game
     9: quiz started
+    10: True or false question
+    11: Multiple choice question
+    12: quiz ended
     
     */
   }
@@ -79,6 +82,7 @@ class Game {
       case 8: $("#loading").show(); $("#loadingMessage")[0].innerHTML = "Joining game..."; break;
       case 9: $("#loading").show(); $("#loadingMessage")[0].innerHTML = "Quiz started!"; break;
       case 10: $("#truefalse").show(); break;
+      case 11: $("#multichoice").show(); break;
     }
   }
 }
