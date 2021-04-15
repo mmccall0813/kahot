@@ -43,8 +43,8 @@ io.on("connection", (socket) => {
       socket.emit("stateChange", 10)
     }else if(data.layout == "CLASSIC"){
     socket.emit("stateChange", 5)
-    }else{
-      
+    }else if(data.type = "multiple_select_quiz"){
+      socket.emit("")
     }
   })
   Client.on("QuestionEnd", (data)=> {
