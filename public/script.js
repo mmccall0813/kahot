@@ -25,6 +25,15 @@ function answer(num){
   socket.emit("answer", num)
 }
 
+var multipleChoice = [false, false, false, false];
+
+function multiChoice(num, DOM){
+  switch(DOM.background){
+    case "#d89e00": DOM.background = "#ac7e00"; break;
+    case "#ac7e00": DOM.background = ""
+  }
+}
+
 function gamePin(){
   var value = document.getElementById("pin").value;
   if(!isNaN(value)){

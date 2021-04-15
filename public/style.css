@@ -175,6 +175,42 @@ footer {
   height:250px;
   width:250px;
 }
+#mutli1 {
+  display: block;
+  position:absolute;
+  background:#e21b3c;
+  top:0px;
+  left:0px;
+  height:250px;
+  width:250px;
+}
+#mutli2 {
+  display: block;
+  position:absolute;
+  background:#1368ce;
+  top:0px;
+  right:0px;
+  height:250px;
+  width:250px;
+}
+#multi3 {
+  display: block;
+  background:#d89e00;
+  position:absolute;
+  bottom:0px;
+  left:0px;
+  height:250px;
+  width:250px;
+}
+#multi4 {
+  display: block;
+  position:absolute;
+  background:#26890c;
+  bottom:0px;
+  right:0px;
+  height:250px;
+  width:250px;
+}
 #true {
     display: block;
   position:absolute;
