@@ -38,7 +38,8 @@ io.on("connection", (socket) => {
     socket.emit("stateChange", 4)
   })
   Client.on("QuestionStart", (data) => {
-    console.log(JSON.stringify(data))
+    console.log(JSON.stringify(data));
+    socket.emit("stateChange", 5)
   })
   Client.on("QuestionEnd", (data)=> {
     socket.emit("QuestionStats", JSON.stringify(data))
