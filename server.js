@@ -41,8 +41,10 @@ io.on("connection", (socket) => {
     console.log(JSON.stringify(data));
     if(data.layout == "TRUE_FALSE"){
       socket.emit("stateChange", 10)
-    }else{
+    }else if(data.layout == "CLASSIC"){
     socket.emit("stateChange", 5)
+    }else{
+      
     }
   })
   Client.on("QuestionEnd", (data)=> {

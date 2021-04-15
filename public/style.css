@@ -138,6 +138,7 @@ footer {
 .answer {
   border:none;
   outline: none;
+  cursor:pointer;
 }
 #answer1 {
   display: block;
@@ -175,8 +176,19 @@ footer {
   height:250px;
   width:250px;
 }
-#mutli1 {
-  display: block;
+#multiChoice {
+  display:block;
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width:500px;
+  height:500px;
+  background-color: #eee;
+  padding: 0.5em;
+}
+#multi1 {display: block;
   position:absolute;
   background:#e21b3c;
   top:0px;
@@ -184,8 +196,8 @@ footer {
   height:250px;
   width:250px;
 }
-#mutli2 {
-  display: block;
+#multi2 {
+   display: block;
   position:absolute;
   background:#1368ce;
   top:0px;

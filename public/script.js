@@ -29,8 +29,8 @@ var multipleChoice = [false, false, false, false];
 
 function multiChoice(num, DOM){
   switch(DOM.background){
-    case "#d89e00": DOM.background = "#ac7e00"; break;
-    case "#ac7e00": DOM.background = ""
+    case "#d89e00": DOM.background = "#ac7e00"; multipleChoice[0] = true; break;
+    case "#ac7e00": DOM.background = "#d89e00"; multipleChoice[0] = false; break;
   }
 }
 
