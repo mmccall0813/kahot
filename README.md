@@ -4,9 +4,15 @@ An alternative kahoot client using socket.io and kahoot.js-updated
 
 ## Features
 
+- Question answering
+- True or false questions
 - Random nickname bypass
 - Automatic curse bypassing
 - You dont need to refresh if your kicked
+
+## To-do
+
+- Multiple-choice questions
 
 ## Notes
 
