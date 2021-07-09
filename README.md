@@ -7,7 +7,7 @@ An alternative kahoot client using socket.io and kahoot.js-updated
 - Question answering
 - True or false questions
 - Random nickname bypass
-- Automatic curse bypassing
+- Automatic curse bypassing in nicknames
 - You dont need to refresh if your kicked
 
 ## Notes
